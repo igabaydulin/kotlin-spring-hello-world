@@ -60,7 +60,7 @@ Make sure you use Java 1.8 at least
 ```bash
 java -jar build/libs/kotlin-spring-hello-world-0.1.jar
 ```
-
+_note: if you unable to build a .jar file you can download it from GitHub's [release section](https://github.com/igabaydulin/kotlin-spring-hello-world/releases)_
 ## Docker
 To be able to build and execute Docker images make sure you have Docker installed. Otherwise you can follow the [instructions](https://docs.docker.com/install/) to install it.
 ### Build Docker Image
