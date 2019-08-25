@@ -6,14 +6,14 @@ Represents basic web-service implementation in Kotlin using Spring Framework
 * [How to run the project](#run-project)
 * [How to run tests](#run-tests)
 * [API documentation](#api)
-** [How to send requests](#request)
-** [Example of a response](#response)
+  * [How to send requests](#request)
+  * [Example of a response](#response)
 * [JAR](#jar)
-** [How to build .jar file](#build-jar-file)
-** [How to run .jar file](#run-jar-file)
+  * [How to build .jar file](#build-jar-file)
+  * [How to run .jar file](#run-jar-file)
 * [Docker](#docker)
-** [How to build Docker image](#build-docker-image)
-** [How to run Docker container](#run-docker-container)
+  * [How to build Docker image](#build-docker-image)
+  * [How to run Docker container](#run-docker-container)
 
 ## Run project
 ```bash
