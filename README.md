@@ -3,8 +3,9 @@
 Represents basic web-service implementation in Kotlin using Spring Framework
 
 ## Table of contents
-* [How to run the project](#run-project)
-* [How to run tests](#run-tests)
+* [Tools and Dependencies](#tools-and-dependencies)
+* [How to Run The Project](#run-project)
+* [How to Run Tests](#run-tests)
 * [API documentation](#api)
   * [How to send requests](#request)
   * [Example of a response](#response)
@@ -15,12 +16,20 @@ Represents basic web-service implementation in Kotlin using Spring Framework
   * [How to build Docker image](#build-docker-image)
   * [How to run Docker container](#run-docker-container)
 
-## Run project
+## Tools and Dependencies
+* Kotlin 1.3.50 ([release notes](https://blog.jetbrains.com/kotlin/2019/08/kotlin-1-3-50-released/), [about](https://kotlinlang.org/docs/reference/basic-syntax.html))
+* Gradle 5.6 ([release notes](https://docs.gradle.org/5.6/release-notes.html), [about](https://docs.gradle.org/current/userguide/userguide.html))
+* Junit Jupiter 5.5.1 ([release notes](https://junit.org/junit5/docs/snapshot/release-notes/index.html#release-notes-5.5.1), [about](https://junit.org/junit5/))
+* Spring Boot 2.1.7.RELEASE ([release notes](https://github.com/spring-projects/spring-boot/releases/tag/v2.1.7.RELEASE), [about](https://docs.spring.io/spring-boot/docs/2.1.7.RELEASE/reference/htmlsingle/#getting-started))
+* Docker 19.03.1 ([about](https://www.docker.com/resources/what-container))
+* Gradle Docker plugin ([about](https://bmuschko.github.io/gradle-docker-plugin/))
+
+## Run Project
 ```bash
 ./gradlew bootRun
 ```
 
-## Run tests
+## Run Tests
 ```bash
 ./gradlew test
 ```
@@ -42,24 +51,24 @@ curl -s localhost:8080/hello | jq
 
 ## JAR
 Make sure you use Java 1.8 at least
-### Build .jar file
+### Build .jar File
 ```bash
 ./gradlew build
 ```
 
-### Run .jar file
+### Run .jar File
 ```bash
 java -jar build/libs/kotlin-spring-hello-world-0.1.jar
 ```
 
 ## Docker
 To be able to build and execute Docker images make sure you have Docker installed. Otherwise you can follow the [instructions](https://docs.docker.com/install/) to install it.
-### Build Docker image
+### Build Docker Image
 ```bash
 ./gradlew buildDockerImage
 ```
 
-### Run Docker container
+### Run Docker Container
 ```bash
 docker run -p 8080:8080 kotlin-spring-hello-world
 ```
