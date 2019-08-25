@@ -41,7 +41,7 @@ curl -s localhost:8080/hello | jq
 ```
 
 ## JAR
-Make sure you uses Java 1.8 at least
+Make sure you use Java 1.8 at least
 ### Build .jar file
 ```bash
 ./gradlew build
