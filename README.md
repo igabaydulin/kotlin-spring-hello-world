@@ -52,6 +52,7 @@ java -jar build/libs/kotlin-spring-hello-world-0.1.jar
 ```
 
 ## Docker
+To be able to build and execute Docker images make sure you have Docker installed. Otherwise you can follow the [instructions](https://docs.docker.com/install/) to install it.
 ### Build Docker image
 ```bash
 ./gradlew buildDockerImage
